@@ -7,6 +7,7 @@ public class interaction : MonoBehaviour
 {
     public GameObject histoire;
     public GameObject text;
+   
 
     public bool touch;
 

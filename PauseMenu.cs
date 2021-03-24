@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Linq;
+
+
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     public static bool gameisPaused = false;
 
     public GameObject pauseMenuUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +65,11 @@ public class PauseMenu : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 
